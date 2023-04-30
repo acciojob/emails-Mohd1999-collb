@@ -42,8 +42,8 @@ public class Gmail extends Email {
         // If the given message is found in any mail in the inbox, move the mail to
         // trash, else do nothing
 
-        // ArrayList<Mail> inbox2 = new ArrayList<>(inbox);
-        for (Mail mail : inbox) {
+        ArrayList<Mail> inbox2 = new ArrayList<>(inbox);
+        for (Mail mail : inbox2) {
             if (mail.getMessage().equals(message)) {
                 trash.add(mail);
                 inbox.remove(mail);
